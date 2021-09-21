@@ -1,9 +1,8 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Gravebot
-
 # Setup system deps
 RUN apt-get update
-RUN apt-get -y install build-essential curl rsync tar python python-pip git libfontconfig1
+RUN apt-get -y install build-essential curl rsync tar python python-pip python-jinja2 git libfontconfig1
 
 # Setup Node
 ENV NODE_VERSION 4.4.2
